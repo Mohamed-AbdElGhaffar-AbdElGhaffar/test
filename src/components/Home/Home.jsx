@@ -8,7 +8,7 @@ export default function Home() {
     return await axios.get('http://sabil.somee.com/api/Product/GetAllProducts');
   }
 
-  let { isLoading, isFetching, data, error } = useQuery('getAllProducts', getProducts);
+  let { data } = useQuery('getAllProducts', getProducts);
 
 
 
